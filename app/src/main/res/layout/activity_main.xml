@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutAnimation="@anim/anim_layout"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_selector"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="点击改变颜色"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/drawable_selector"/>
+
+
+    <!--如果想要去除checkbox自带的复选框，就设置button为null，在设置想要的背景-->
+    <CheckBox
+        android:id="@+id/shape_checkbox"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/checkbox_selector"
+        android:button="@null"/>
+
+    <TextView
+        android:id="@+id/tv_translate"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="点击颜色渐变"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/drawable_translate"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        android:padding="1dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/iv_clip"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:src="@drawable/drawable_clip"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="点击设置进度条"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
